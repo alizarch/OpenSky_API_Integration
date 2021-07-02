@@ -1,0 +1,64 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+{% block seperate_css %}
+<style>
+body {
+  background: url('/static/app/images/landing_page1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+.sign_up{
+    width:170px;
+    
+    float:right;
+}
+.login{
+    width:170px;
+   
+}
+.first_row{
+     margin-top:350px;
+}
+.heading_esgp{
+    text-align:center;
+    color:white;
+}
+.para_esgp{
+    text-align:center;
+    color:white;
+}
+</style>
+{% endblock seperate_css %}
+
+
+{% block seperate_contant %}
+    <div class="container">
+        
+        <div class="row first_row">
+            <div class="col-md-12">
+                <h1 class="heading_esgp">OpenSky API Integration </h1>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="para_esgp">
+                    Find the right direction of Airplanes 
+                </p>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-md-7">
+                <a href="{% url 'flight_tracking' %}" class="animate__animated animate__flipInX btn btn-success btn-rounded sign_up"> Go to the Map </a>
+            </div>
+        </div>
+    </div>
+
+{% endblock seperate_contant %}
+
+{% block seperate_javascript %} {% endblock seperate_javascript %}

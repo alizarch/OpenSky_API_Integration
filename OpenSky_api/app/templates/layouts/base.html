@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 
+            {% block title %} {% endblock title %}
+        </title>
+        
+        {% include 'include/commen_head.html' %}
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <style>
+        <link rel= "stylesheet" type = "text/css" href="{% static 'app/css/commen_css.css'%}" />
+        </style>
+        
+        {% block seperate_css %} {% endblock seperate_css %}
+        
+    </head>
+    <body>
+
+
+                {% include 'include/commen_header.html'%}
+
+            {% block seperate_contant %} {% endblock seperate_contant %}
+
+                {% include 'include/commen_footer.html'%}
+
+             
+
+        {% include 'include/commen_foot.html' %}
+        {% block seperate_javascript %} {% endblock seperate_javascript %}
+    </body>
+</html>

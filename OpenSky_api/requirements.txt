@@ -1,0 +1,5 @@
+requests
+bokeh
+pandas
+numpy
+django
